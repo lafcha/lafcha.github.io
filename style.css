@@ -25,7 +25,7 @@
     height: 20px;
     border-bottom: 2px solid transparent;
     transition: border-bottom 0.5s;
-    margin: 0 50px;
+    margin: 0 30px;
     
 }
 .header-link-wrapper:hover {
@@ -106,7 +106,6 @@ footer a:active, footer a:visited, footer a:hover{
     align-content: center;
     padding: 6rem;
     background-color: #f5f5f5;
-    flex-basis: ;
 }
 h1 {
     font-family: 'Abril Fatface', cursive;
@@ -134,7 +133,7 @@ h1 {
     width: 320px;
     height: 280px;
     margin: 20px 10px;
-    background-color:whitesmoke;
+    background-color:white;
     border-radius: 10px;
     padding : 10px;
     box-shadow: 3px 3px 10px 3px rgba(204, 202, 202, 0.79);
@@ -163,4 +162,67 @@ h1 {
 .project-card p {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
+}
+#responsive {
+    color:#9A8FA8 ;
+    font-size: 0.6em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding-top: 5px;
+    margin-top: 2px;
+}
+#responsive::before{
+    content:'';
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 30px;
+    height: 30px;
+    background: url(img/computer.png) center center / 25px 20px no-repeat;
+}
+/*MEDIA QUERIES*/
+@media all and (max-width:800px) {
+    .container {
+        background-image: url(img/html.png);
+        background-repeat: no-repeat;   
+        background-position-y: 10%;
+        background-position-x: center;
+        background-size: 300px;
+        height: 800px;    
+    } 
+    .container p, button {
+        position: absolute;
+        left: 75px;
+        font-size: 1.2em;
+    }
+    .container button {
+        font-size: 1em;
+    }
+    .hello {
+        top: 450px;
+        }
+    .name {
+        top: 500px;
+    }
+    .name span {
+        color:#BAA7FB;
+    }
+    .portfolio {
+        top: 550px;
+    }
+    .portfolio span {
+        color : #54FFBC;
+    }
+    button {
+        top: 600px;
+    }
+    .header {
+        flex-wrap: wrap;
+        height: 50px;
+        justify-content: space-evenly;
+     }
+    .header-link-wrapper {
+        height: 20px;
+        margin: 0 5px;
+    }
 }
