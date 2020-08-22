@@ -10,6 +10,7 @@
     justify-content: flex-end;
     align-items: center;
     text-align: center;
+    background-color: white;
 }
 .header a {
     display: block;
@@ -70,18 +71,17 @@ button{
     padding: 10px 15px 10px 15px;
     color: white;
     background-color:#ff5d9f ;
-    border-radius: 5px;
+    border-radius: 80px;
     border: none;
     font-size: 1vw;
     top: 550px;
     text-transform: uppercase;
     font-weight: 500;
-    font-family: 'Josefin Sans', sans-serif;
+    transition: background-color .3s;
 }
 a button:hover {
     background-color:#000066 ;
-    cursor: pointer;
-    transition: background-color .5s;
+    cursor: pointer; 
 }
 footer {
     font-family: 'Josefin Sans', sans-serif;
@@ -98,6 +98,7 @@ footer a {
 }
 footer a:active, footer a:visited, footer a:hover{
     color: #000066;
+    
 }
 /*PROJECT PAGE */
 .body-project {
@@ -112,7 +113,12 @@ h1 {
     color:#ff5d9f;
     text-align: center;
     font-size: 50px;
-    margin-top: 25px;
+    margin-top: 100px;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .project-undertitle {
     font-family: 'Josefin Sans', sans-serif;
@@ -122,64 +128,81 @@ h1 {
     font-size: 12px;
     margin-bottom: 50px;
 }
- .main-project {
-    display: flex;
-    align-items: start;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-} 
+.main-project{
+    
+    margin: auto;
+}
 .project-card {
     display: block;
-    width: 320px;
-    height: 280px;
-    margin: 20px 10px;
-    background-color:white;
-    border-radius: 10px;
-    padding : 10px;
+    width: 900px;
+    height: 260px;
+    margin: 50px auto;
+    background-color: white;
+    padding-right : 10px;
     box-shadow: 3px 3px 10px 3px rgba(204, 202, 202, 0.79);
     -moz-box-shadow: 3px 3px 10px 3px rgba(204, 202, 202, 0.79);
     -webkit-box-shadow: 3px 3px 10px 3px rgba(204, 202, 202, 0.79); 
-}
-.project-card h2 {
-    font-family: 'Abril Fatface', cursive;
-    color: #000066 ; 
+    transition: opacity .3s;
 }
 .project-card:hover {
     opacity: 0.6;
-    cursor: pointer;
+    cursor: pointer;  
 }
 .project-card a{
     text-decoration: none;
     color: inherit;
 }
 .card-img {
-    width: 300px;
+    height: 260px;
+    float: left;
+    margin-right: 10px;
 }
 .main-project h2 {
-    padding-bottom: 10px;
-    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-top: 20px;
+    font-family: 'Abril Fatface', cursive;
+    color: #000066 ; 
+    margin-top: 20px;
+    padding-top: 20px;
 }
 .project-card p {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
-#responsive {
-    color:#9A8FA8 ;
-    font-size: 0.6em;
-    font-weight: bolder;
-    text-transform: uppercase;
-    padding-top: 5px;
-    margin-top: 2px;
+.p1 {
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-#responsive::before{
-    content:'';
+.project-card .project-type  {
+    font-size: 0.5em;
+    background-color: #ff5d9f;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 80px;
+    padding: 4px 8px;
+    margin-right: 3px;
+    margin-bottom: 10px;
+    display: inline-block;   
+}
+.software-icon {
+    height: 35px;
+    width: 35px;
+    content: '';
     display: inline-block;
     vertical-align: middle;
-    margin-right: 5px;
-    width: 30px;
-    height: 30px;
-    background: url(img/computer.png) center center / 25px 20px no-repeat;
+    margin-top: 10px;
 }
+#html {
+    background: url(img/htmllogo.png) center center / 35px 35px no-repeat;
+}
+#css {
+    background: url(img/csslogo.png) center center / 35px 35px no-repeat;
+}
+#figma {
+    background: url(img/figmalogo.png) center center / 25px 35px no-repeat;
+}
+
 /*MEDIA QUERIES*/
 @media all and (max-width:800px) {
     .container {
