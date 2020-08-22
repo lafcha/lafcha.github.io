@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500;700&display=swap" rel="stylesheet">
     <title>Charlotte Lafarge's Projects</title>
 </head>
 <body>
-    <nav class="header">
+    <nav class="header sticky">
         <div class="header-link-wrapper">
             <a href="index.html"target="_blank" rel="noopener">Home</a>
         </div>
@@ -24,25 +24,44 @@
         </div>
     </nav>
     <h1>My Projects</h1>
-    <p class="project-undertitle">All my projects are based on HTML 5 and CSS 3 only. </p>
+    <p class="project-undertitle">Here are the projects I made until now. </p>
     <div class="main-project">  
-        <card class="project-card"><a href="https://lafcha.github.io/SITECV_ONEPAGE/index.html" c>
+        <card class="project-card"><a href="https://lafcha.github.io/SITECV_ONEPAGE/index.html"target="_blank" rel="noopener">
             <img class="card-img"src="img/aboutme.jpg" alt="Vignette site à propos">
             <h2>A website about me</h2>
-            <p>A website about why I want to become a developer and why I think this job is made for me.</p> 
+            <p class="project-type">Web development</p><p class="project-type">Personal project</p>
+            <p class="p1">A website about why I want to become a developer and why I think this job is made for me. </p>
+            <p>This was the first project I made after 20 hours of HTML/CSS online courses. </p>
+            <div class="software-icon" id="html"></div><div class="software-icon" id="css"></div>
         </a></card>
         <card class="project-card"><a href="blog/index.html"target="_blank" rel="noopener">
             <img class="card-img" src="img/blog.jpg" alt="Vignette site blog">
             <h2>A blog</h2>
-            <p>To do this website, I followed a Grafikart tutorial, then I finished the project to get some practice.</p>  
+            <p class="project-type">Tutorial</p><p class="project-type">Web development</p>
+            <p class="p1">To do this website, I followed a Grafikart tutorial. The aim was to create a travel blog.</p> 
+            <p>I had fun finishing the project to get some practice.</p> 
+            <div class="software-icon" id="html"></div><div class="software-icon" id="css"></div> 
         </a> 
         </card> 
         <card class="project-card"><a href="https://lafcha.github.io/reseau/index.html"target="_blank" rel="noopener">
                 <img class="card-img" src="img/reseau.jpg" alt="Vignette site réseau social">
             <h2>A social network</h2>
-            <p>Another Grafikart tutorial about a social network.</p>
-            <p id="responsive">Responsive</p>
+            <p class="project-type">Tutorial</p><p class="project-type">Web development</p><p class="project-type">Responsive</p>
+            <p class="p1">Another Grafikart tutorial about a social network.</p>
+            <p>With this tuturial I learnt how to make responsive websites.</p>
+           <div class="software-icon" id="html"></div><div class="software-icon" id="css"></div>
         </a>
-       </div>
+        </card>
+        <card class="project-card"><a href="https://www.figma.com/proto/6biAced7YAlArsJWwysKOY/Dashboard-Gestion-Fiche-Client-Coaching?node-id=8%3A69&scaling=min-zoom"target="_blank" rel="noopener">
+            <img class="card-img" src="img/figma.jpg" alt="Vignette site réseau social">
+        <h2>A web application prototype</h2>
+        <p class="project-type">UX/UI</p><p class="project-type">Prototype</p>
+        <p class="p1">This client administration app prototype was made for a fictive coaching business.</p>
+        <p>As this was my first time using Figma and creating a website prototype.</p>
+       <div class="software-icon" id="figma"></div>
+    </a>
+    </card>
+    </div>
     </div>
 </body>
+</html>
