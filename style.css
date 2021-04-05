@@ -186,8 +186,7 @@ h1 {
     display: inline-block;   
 }
 .software-icon {
-    height: 35px;
-    width: 35px;
+
     content: '';
     display: inline-block;
     vertical-align: middle;
@@ -195,12 +194,28 @@ h1 {
 }
 #html {
     background: url(img/htmllogo.png) center center / 35px 35px no-repeat;
+    height: 35px;
+    width: 35px;
 }
 #css {
     background: url(img/csslogo.png) center center / 35px 35px no-repeat;
+    height: 35px;
+    width: 35px;
 }
 #figma {
     background: url(img/figmalogo.png) center center / 25px 35px no-repeat;
+    height: 35px;
+    width: 35px;
+}
+#js {
+    background: url(img/jslogo.png) center center / 30px 30px no-repeat;
+    height: 30px;
+    width: 30px;
+}
+#php {
+    background: url(img/phplogo.png) center center / 55px 25px no-repeat;
+    height: 35px;
+    width: 55px;
 }
 
 /*MEDIA QUERIES*/
